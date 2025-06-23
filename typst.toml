@@ -10,3 +10,8 @@ license = "MIT"
 description = "Article optimized for Chinese typesetting"
 keywords = [ "Chinese", "article", "cjk", "cjk-latin-spacing" ]
 exclude = ["/template/*"]
+
+[template]
+path = "template"
+entrypoint = "document.typ"
+thumbnail = "thumbnail.png"
