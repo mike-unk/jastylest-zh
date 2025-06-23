@@ -1,3 +1,5 @@
+[中文](README-zh.md) | English
+
 # jastylest-zh
 jastylest is a template for Japanese typesetting in Typst, and jastylest-zh is optimized for Chinese typesetting based on it.
 
@@ -33,9 +35,9 @@ Then use the configuration file:
 ```
 
 ## Fonts
-The default fonts are STIX Two Text/Math, Fira Sans/Mono, and Source Han Serif/Sans. You can also modify them yourself.
+The default fonts are STIX Two Text/Math, Fira Sans/Mono, and Noto Serif/Sans CJK SC. You can also modify them yourself.
 
-The default Chinese font for italics is FandolKai (you need to upload it yourself). You can also change it in the above configuration. The Fandol font series can be downloaded at https://ctan.org/pkg/fandol.
+The default Chinese font for italics is FandolKai (you need to upload it yourself). You can also change it in the above configuration. The Fandol font series can be downloaded at <https://ctan.org/pkg/fandol>.
 
 ## Functions
 There are two built-in functions: `#textsf[]` and `#noindent[]`. `#textsf[]` allows the part enclosed in parentheses to use the sans-serif font, while `#noindent[]` allows the part enclosed in parentheses to cancel the indentation.
