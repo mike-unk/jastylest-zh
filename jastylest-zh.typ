@@ -93,8 +93,8 @@
     set par(first-line-indent: 0em)
     if it.numbering != none {
       counter(heading).display(it.numbering)
+      h(1em)  // 这样在没有编号时标题可以完全靠左
     }
-    h(1em)
     it.body
   }
   
