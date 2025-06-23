@@ -36,9 +36,9 @@ jastylest 是一个用于 Typst 日文排版的模板，而 jastylest-zh 基于�
 ```
 
 ## 字体
-默认字体为STIX Two Text/Math、Fira Sans/Mono和思源宋体/黑体。您也可以自行修改。
+默认字体为 STIX Two Text/Math、Fira Sans/Mono 和思源宋体/黑体。您也可以自行修改。
 
-斜体的默认中文字体是 FandolKai（需自行上传），您也可以自行在上方配置中更改。Fandol系列字体可以在 https://ctan.org/pkg/fandol 中下载。
+斜体的默认中文字体是 FandolKai（需自行上传），您也可以自行在上方配置中更改。Fandol 系列字体可以在 <https://ctan.org/pkg/fandol> 中下载。
 
 ## 功能
 内置两个函数：`#textsf[]` 和 `#noindent[]`。`#textsf[]` 可以让被括号包裹的部分使用无衬线字体，而 `#noindent[]` 可以让被括号包裹的部分取消缩进。
