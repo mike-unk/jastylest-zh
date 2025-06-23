@@ -1,4 +1,4 @@
-#import "jastylest-zh.typ": *
+#import "@preview/jastylest-zh:0.1.1": *
 #import "@preview/pointless-size:0.1.1": zh, zihao  // 引入对中式字号的支持
 #import "@preview/cjk-unbreak:0.1.1": remove-cjk-break-space
 
