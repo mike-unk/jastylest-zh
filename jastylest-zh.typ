@@ -65,7 +65,7 @@
     numbering: "1",
     columns: cols,
   )
-  
+
   // 文本设定
   set text(
     font: ((name: seriffont, covers: "latin-in-cjk"), seriffont-cjk),
@@ -73,7 +73,7 @@
     weight: font-weight,
   )
   show smartquote: set text(
-    font: seriffont,  // 修正引号字体
+    font: seriffont, // 修正引号字体
   )
   show emph: set text(
     font: ((name: seriffont, covers: "latin-in-cjk"), kaiti-cjk),
@@ -85,7 +85,7 @@
   show math.equation: set text(
     font: mathfont,
   )
-  
+
   // 标题设定
   set heading(numbering: "1.1")
   show heading: it => {
@@ -93,11 +93,11 @@
     set par(first-line-indent: 0em)
     if it.numbering != none {
       counter(heading).display(it.numbering)
-      h(1em)  // 这样在没有编号时标题可以完全靠左
+      h(1em) // 这样在没有编号时标题可以完全靠左
     }
     it.body
   }
-  
+
   // 段落设定
   set par(
     leading: 0.8em,
@@ -108,7 +108,16 @@
   // 其他设定
   set columns(gutter: 2em)
   show: common-style.with()
-  
+
+  // 文档设置
+  set document(date: datetime.today())
+  if title != none {
+    set document(title: title)
+  }
+  if author != none {
+    set document(author: author)
+  }
+
   // 标题生成
   if title != none {
     if (type(author) != array) {
@@ -148,7 +157,7 @@
 }
 
 #let noindent(it) = {
-  set par(first-line-indent: 0em)  // 临时取消缩进
+  set par(first-line-indent: 0em) // 临时取消缩进
   it
 }
 
@@ -175,7 +184,7 @@
 ) = {
   let textsf(..args) = {
     show smartquote: set text(
-      font: sansfont  // 修正引号字体
+      font: sansfont, // 修正引号字体
     )
     show emph: set text(
       font: ((name: sansfont, covers: "latin-in-cjk"), kaiti-cjk),
@@ -185,7 +194,7 @@
       ..args,
     )
   }
-  
+
   return (
     article.with(
       seriffont: seriffont,
@@ -207,6 +216,6 @@
       author: author,
       date: date,
     ),
-    textsf
+    textsf,
   )
 }

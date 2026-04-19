@@ -14,14 +14,14 @@
   // mathfont: "STIX Two Math",              // 数学字体
   // kaiti-cjk: "FandolKai",                 // 楷体字体，默认为FandolKai（需要导入）
   // paper: "a4",              // 纸张大小，默认为a4
-  font-size: zh(-4),          // 字号，也可以配合其他的包导入中文字号
-  code-font-size: zh(-5),     // 代码字号
+  font-size: zh(-4), // 字号，也可以配合其他的包导入中文字号
+  code-font-size: zh(-5), // 代码字号
   // font-weight: "regular",   // 字体粗细，默认为常规
   // cols: 1,                  // 多栏，默认为1栏
   // titlepage: false,         // 是否显示标题页，默认不显示
-  title: [*jastylest-zh使用说明*],    // 标题，可以使用格式
-  office: [天朝理工大学 中文排版专业],  // 单位，可以使用格式，可以兼做副标题
-  author: [Mike Unknown],           // 作者，可以使用格式
+  title: [jastylest-zh使用说明], // 标题，可以使用格式
+  office: [天朝理工大学 中文排版专业], // 单位，可以使用格式，可以兼做副标题
+  author: "Mike Unknown", // 作者，可以使用格式
   // date: none,            // 日期，默认为当前日期
 )
 #show: article
